@@ -1,0 +1,334 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  /* background-color: #67ace4; */
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  color: #343434;
+  padding-top: 80px;
+  -moz-animation: hScroll 10s infinite linear;
+  -ms-animation: hScroll 10s infinite linear;
+  -o-animation: hScroll 10s infinite linear;
+  -webkit-animation: hScroll 10s infinite linear;
+  -webkit-font-smoothing: antialiased;
+  animation: hScroll 10s infinite linear;
+  background-image: url(https://www.staticsources.com/app/static/ico-bg.png);
+  background-color: transparent;
+  background-position: center center;
+}
+
+p {
+  margin: 0;
+}
+
+::selection {
+  background: none;
+}
+
+::-moz-selection {
+  background: none;
+}
+
+/*微信打开提示*/
+.tips {
+  color: #343434;
+  font-size: 14px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.tips span {
+  display: inline-block;
+  border: dashed 1px #666;
+  padding: 1px 2px;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+.tips .iconfont {
+  margin-left: 10px;
+}
+
+/*可视区域*/
+#wrap {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*文案区域*/
+#text {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#text .text {
+  font-size: 16px;
+}
+
+#text .text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+#text .fl {
+  float: left;
+}
+
+#text img {
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+#text span {
+  width: 128px;
+  height: 29px;
+  background: url(../img/info.png) no-repeat;
+}
+
+#text a {
+  line-height: 14px;
+  color: #343434;
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  width: 200px;
+  margin: 10px auto;
+  border: 1px solid #343434;
+  border-radius: 4px;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+}
+
+#text a .iconfont {
+  font-size: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#text a:hover,
+#text a:active {
+  background: #eee;
+  color: #000;
+}
+
+.tech-btn {
+  z-index: 99;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  color: #67ace4;
+  -moz-animation: techStart 1s infinite linear;
+  -ms-animation: techStart 1s infinite linear;
+  -o-animation: techStart 1s infinite linear;
+  -webkit-animation: techStart 1s infinite linear;
+  -webkit-font-smoothing: antialiased;
+  animation: techStart 1s infinite linear;
+}
+
+.tech-div {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.tech-div.show {
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.tech-div img {
+  display: block;
+  width: 100%;
+}
+
+.tech-div #iphoneTechClose {
+  position: absolute;
+  font-size: 20px;
+  padding: 10px;
+  top: 0;
+  right: 0;
+
+}
+
+.loading {
+  display: inline-block;
+  -moz-animation: circle 1s infinite linear;
+  -ms-animation: circle 1s infinite linear;
+  -o-animation: circle 1s infinite linear;
+  -webkit-animation: circle 1s infinite linear;
+  -webkit-font-smoothing: antialiased;
+  animation: circle 1s infinite linear;
+}
+
+/* horizontal animation */
+@-webkit-keyframes hScroll {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -100% 0;
+  }
+}
+
+@-moz-keyframes hScroll {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -100% 0;
+  }
+}
+
+@-ms-keyframes hScroll {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -100% 0;
+  }
+}
+
+@-o-keyframes hScroll {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes hScroll {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 84% 0;
+  }
+}
+
+/* horizontal animation */
+@-webkit-keyframes techStart {
+  from {
+    padding: 15px 0;
+  }
+
+  to {
+    padding: 20px 0;
+  }
+}
+
+@-moz-keyframes techStart {
+  from {
+    padding: 15px 0;
+  }
+
+  to {
+    padding: 20px 0;
+  }
+}
+
+@-ms-keyframes techStart {
+  from {
+    padding: 15px 0;
+  }
+
+  to {
+    padding: 20px 0;
+  }
+}
+
+@-o-keyframes techStart {
+  from {
+    padding: 15px 0;
+  }
+
+  to {
+    padding: 20px 0;
+  }
+}
+
+@keyframes techStart {
+  from {
+    padding: 15px 0;
+  }
+
+  to {
+    padding: 20px 0;
+  }
+}
+
+/* horizontal animation */
+@-webkit-keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
