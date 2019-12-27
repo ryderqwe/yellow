@@ -14,7 +14,7 @@ body {
   -webkit-animation: hScroll 10s infinite linear;
   -webkit-font-smoothing: antialiased;
   animation: hScroll 10s infinite linear;
-  background-image: url(https://www.staticsources.com/app/static/ico-bg.png);
+  background-image: url(./ico-bg.jpg);
   background-color: transparent;
   background-position: center center;
 }
