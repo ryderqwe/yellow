@@ -17,6 +17,7 @@ body {
   background-image: url(./ico-bg.jpg);
   background-color: transparent;
   background-position: center center;
+  background-size: auto 100vh;
 }
 
 p {
